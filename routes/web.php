@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+
 
 Route::get('/', function () {
     return Inertia::render('welcome');
@@ -11,6 +13,10 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('dashboard', function () {
         return Inertia::render('dashboard');
     })->name('dashboard');
+    Route::get('/products',[productController::class, 'index'])->name('products.index');
+    Route::post('/products', [productController::class, 'store'])->name('products.store');
+    Route::get('/products/create', [productController::class, 'create'])->name('products.create');
+    Route::delete('/products/{product}', [productController::class, 'destroy'])->name('products.destroy');
 });
 
 require __DIR__.'/settings.php';
