@@ -26,7 +26,7 @@ interface pageprops {
     products: Product[];
 }
 export default function Index() {
-    const { products, flash } = usePage().props as pageprops;
+    const { products, flash } = usePage().props as unknown as pageprops;
 
     const {processing, delete: destroy } = useForm();
 
@@ -78,7 +78,7 @@ export default function Index() {
                                 <TableCell>{product.description}</TableCell>
                             
                                 <TableCell className="text-right">
-                                    <Button className='bg-slate-600 hover:bg-slate-900 mx-3'>Edit</Button>
+                                  <Link href={route('products.edit', product.id)}><Button className='bg-slate-600 hover:bg-slate-900 mx-3'>Edit</Button> </Link>  
                                     <Button disabled={processing} onClick={() => handleDelete(product.id, product.name)} className='bg-red-500 hover:bg-red-700'>Delete</Button>
                                 </TableCell>
                             </TableRow>
