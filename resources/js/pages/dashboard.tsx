@@ -19,7 +19,7 @@ export default function Dashboard() {
                     <div className="relative aspect-video overflow-hidden rounded-xl border border-sidebar-border/70 dark:border-sidebar-border">
                         <PlaceholderPattern className="absolute inset-0 size-full stroke-neutral-900/20 dark:stroke-neutral-100/20" />
                     </div>
-                    <div className="relative aspect-video overflow-hidden rounded-xl border border-sidebar-border/70 dark:border-sidebar-border">
+                    <div className="relative aspect/Users/admin/Downloads/Culture Reset – Just another WordPress site/imgi_12_listing15.jpg /Users/admin/Downloads/Culture Reset – Just another WordPress site/imgi_33_eaters-collective-12eHC6FxPyg-unsplash-1.jpg /Users/admin/Downloads/Culture Reset – Just another WordPress site/imgi_39_listing3.jpg /Users/admin/Downloads/Culture Reset – Just another WordPress site/imgi_44_listing3.jpg /Users/admin/Downloads/Culture Reset – Just another WordPress site/imgi_50_listing9.jpg /Users/admin/Downloads/Culture Reset – Just another WordPress site/imgi_56_listing4.jpg-video overflow-hidden rounded-xl border border-sidebar-border/70 dark:border-sidebar-border">
                         <PlaceholderPattern className="absolute inset-0 size-full stroke-neutral-900/20 dark:stroke-neutral-100/20" />
                     </div>
                     <div className="relative aspect-video overflow-hidden rounded-xl border border-sidebar-border/70 dark:border-sidebar-border">
